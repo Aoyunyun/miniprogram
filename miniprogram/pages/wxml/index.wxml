@@ -11,7 +11,7 @@
 </view>
 
 <!-- 带图片属性的标签 -->
-<image class="userinfo-avator" src="./image/a.png"></image>
+<!-- <image class="userinfo-avator" src="./image/a.png"></image> -->
 
 <!-- 通过 {{变量名}} 来做数据绑定-->
 <!-- 属性值也可以动态去改变，不过属性值需要包裹在双引号中 -->
@@ -52,7 +52,7 @@
 this: item本身， 唯一且不变
 -->
 <switch wx:for="{{objectArray}}" wx:key="unique">id: {{item.id}}</switch>
-<button bindtap="switch"> Switch </button>
+<button bindtap="switch" hover-class="hover"> Switch </button>
 <button bindtap="addToFront"> Add to the front </button>
 
 <view>

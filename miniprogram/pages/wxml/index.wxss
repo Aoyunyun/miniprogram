@@ -1,2 +1,61 @@
 /* wxss WeiXin Style Sheet */
 /* pages/wxml/index.wxss */
+
+
+/* #id id="id"的组件 */  
+/* .class class="class"的组件 */
+/* view 所有view组件 */
+/* ::after 组件后边插入内容 */
+/* ::before 组件前边插入内容 */
+
+/* 权重 !important > style > #id > .class > view */
+/*         无限大      1000   100     10      1 */
+
+view {
+  color: red;
+}
+
+switch {
+  color: orange;
+  column-count: 2;
+}
+
+button {
+  background-color: blue;
+  color: red;
+}
+
+/* 容器属性 */
+/* flex-direction 主轴方向 row（横向从左往右） | row-reverse | column（纵向从上往下） | column-reverse  */
+/* flex-wrap 是否换行 */
+/* justify-content 对齐方式 横向*/
+/* align-items 项目在行中的对齐方式 竖向*/
+/* align-content 多行排列的对齐方式 以及间隙配置 */
+.container {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+/* 项目属性 */
+/* order 设置项目的排列顺序，值越小排列越靠前 */
+/* flex-shrink 主轴向溢出时的收缩因子 */
+/* flex-grow 主轴向剩余空间的扩张因子 */
+/* flex-basis 横向时相当于 width, 纵向时相当于 height */
+/* flex =  flex-grow flex-shrink flex-basis 三个同时设置*/
+/* align-self 设置item的对齐方式，可以覆盖容器的对齐方式 */
+.item {
+  order: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 100;
+  align-self: center;
+}
+
+.hover {
+  background-color: gray;
+}

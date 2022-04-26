@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/wxml/index",
+    "pages/felx/felx",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -17,6 +18,9 @@
       },{
         "pagePath": "pages/logs/logs",
         "text": "log"
+      },{
+        "pagePath": "pages/felx/felx",
+        "text": "home"
       }],
       "position": "top"
     },
